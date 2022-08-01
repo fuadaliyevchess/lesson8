@@ -1,0 +1,149 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    background: rgb(255, 255, 255);
+}
+
+.nav1 h1 {
+    color: rgb(67, 67, 67);
+    border: 1px solid black;
+    text-transform: uppercase;
+    animation-name: animation;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes animation {
+    from {
+        background-color: rgb(255, 255, 255);
+        color: rgb(67, 67, 67);
+    }
+
+    to {
+        background-color: rgb(67, 67, 67);
+        color: rgb(255, 255, 255);
+    }
+}
+
+.nav {
+    display: flex;
+    flex-direction: row;
+    margin-right: 200px;
+}
+
+ul {
+    margin-right: 40px;
+    color: rgb(67, 67, 67);
+    padding: 10px;
+    cursor: pointer;
+}
+
+ul:hover {
+    background: rgb(67, 67, 67);
+    color: rgb(255, 255, 255);
+    padding: 50px;
+    transition: padding 2s;
+}
+
+nav a {
+    padding: 15px;
+    color: rgb(67, 67, 67);
+    text-decoration: none;
+}
+
+nav a:hover {
+    background-color: rgb(67, 67, 67);
+    color: rgb(255, 255, 255);
+}
+
+.fa {
+    padding: 15px;
+    color: rgb(67, 67, 67);
+    text-decoration: none;
+}
+
+.fa:hover {
+    background-color: rgb(67, 67, 67);
+    color: rgb(255, 255, 255);
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 80%;
+    height: 800px;
+}
+.container button {
+    padding: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border: none;
+    cursor: pointer;
+}
+.container .box1 button{
+margin-top: 350px;
+margin-left: 230px;
+padding-right: 20px;
+padding-left: 20px;
+}
+.container .box2 button{
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 80px;
+}
+.container .box3 button{
+    
+}
+
+.box1 {
+    width: 47%;
+    height: 400px;
+    background-image: url(/women.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.box2 {
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    height: 400px;
+}
+
+.flex-box1 {
+    background-image: url(/download.jpeg);
+    padding: 60px;
+}
+
+.flex-box2 {
+    background-image: url(/Footwear.jpeg);
+    padding: 25px;
+}
+
+.box3 {
+    width: 21%;
+    height: 400px;
+    background-image: url(/watch.jpeg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.about {
+    display: block;
+    width: 100%;
+    height: 800px;
+    background-color: black;
+    color: rgb(255, 255, 255);
+}
+
+.about h1 {
+    font-size: 50px;
+    text-align: center;
+}
